@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Formulaire d'Inscription</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="nom">Nom Complet</label>
+                <input type="text" id="nom" name="nom">
+                <div id="nomError" class="error">Le nom doit contenir au moins 3 caractères.</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="dateNaissance">Date de Naissance (AAAA-MM-JJ)</label>
+                <input type="text" id="dateNaissance" name="dateNaissance" placeholder="AAAA-MM-JJ" maxlength="10">
+                <div id="dateError" class="error">Format invalide. Utilisez le format AAAA-MM-JJ (ex: 1990-01-31)</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="telephone">Numéro de Téléphone (Mauritanie)</label>
+                <input type="text" id="telephone" name="telephone" placeholder="Ex: 22222222">
+                <div id="telephoneError" class="error">Format invalide. Le numéro doit commencer par 2, 3, ou 4 et contenir 8 chiffres.</div>
+            </div>
+            
+            <button type="submit">Soumettre</button>
+        </form>
+        
+        <div id="successMessage" class="success-message">
+            Formulaire soumis avec succès!
+        </div>
+    </div>
+
+    <script src="main.js">
+    </script>
+</body>
+</html>
